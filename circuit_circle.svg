@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="230" viewBox="0 0 250 230" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="8" x2="184" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1777DB"/>
+      <stop offset="0.55" stop-color="#0C4EA9"/>
+      <stop offset="1" stop-color="#15246B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92 22) rotate(70) scale(130 160)">
+      <stop offset="0" stop-color="#6FC3FF" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#2D8FFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1C5FB2" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="115" cy="115" r="115"/>
+    </clipPath>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .trace{stroke:#3191ff; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; opacity:.88}
+      .trace2{stroke:#2b83ef; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; fill:none; opacity:.75}
+      .node{fill:#297ff0; opacity:.95}
+      .node2{fill:none; stroke:#4ea2ff; stroke-width:2; opacity:.55}
+      .tiny{fill:#66b6ff; opacity:.35}
+    </style>
+  </defs>
+
+  <g clip-path="url(#circleClip)">
+    <rect width="250" height="230" fill="url(#bg)"/>
+    <rect width="250" height="230" fill="url(#glow)"/>
+
+    <rect x="0" y="38" width="250" height="10" fill="#0E4C9A" opacity="0.18"/>
+    <rect x="0" y="109" width="250" height="7" fill="#163F86" opacity="0.22"/>
+    <rect x="0" y="138" width="250" height="5" fill="#0E3B7B" opacity="0.18"/>
+
+    <g filter="url(#softGlow)">
+      <path class="trace" d="M6 67H28L39 55H52"/>
+      <path class="trace" d="M27 42H43L58 27H80V14"/>
+      <path class="trace" d="M0 95H18L30 84H50L71 64H93L108 79H128L142 93H164"/>
+      <path class="trace" d="M77 0V21H97L109 33H126L137 44H161L176 59H209"/>
+      <path class="trace" d="M128 19V42H147L158 53H193L211 71H250"/>
+      <path class="trace" d="M0 154H18L34 141H53L70 122H99L113 109H130L149 91H176L186 82H205"/>
+      <path class="trace" d="M0 175H31L44 164H73L90 148H116L130 136H149L168 118H200L212 107H250"/>
+      <path class="trace" d="M88 169H113L128 181H154L171 167H200L215 154H250"/>
+      <path class="trace" d="M74 201H99L113 186H134L147 173H173L191 191H206L224 176H250"/>
+      <path class="trace" d="M145 216V196H164L179 182H198V169"/>
+      <path class="trace" d="M52 229V212H69L81 201H97"/>
+
+      <path class="trace2" d="M39 73H63L81 56V42"/>
+      <path class="trace2" d="M176 35H189L199 25H219"/>
+      <path class="trace2" d="M171 96H183L196 108H217"/>
+      <path class="trace2" d="M103 129H121L130 121H150"/>
+      <path class="trace2" d="M27 188H47L58 199H82"/>
+      <path class="trace2" d="M167 142H181L191 133H208"/>
+    </g>
+
+    <g>
+      <rect class="node" x="0" y="89" width="13" height="13"/>
+      <rect class="node" x="75" y="0" width="10" height="10"/>
+      <rect class="node" x="124" y="14" width="9" height="9"/>
+      <rect class="node" x="205" y="66" width="10" height="10"/>
+      <rect class="node" x="129" y="105" width="8" height="8"/>
+      <rect class="node" x="210" y="103" width="9" height="9"/>
+      <rect class="node" x="74" y="166" width="9" height="9"/>
+      <rect class="node" x="200" y="149" width="10" height="10"/>
+      <rect class="node" x="221" y="172" width="8" height="8"/>
+      <rect class="node" x="91" y="196" width="9" height="9"/>
+      <rect class="node" x="46" y="206" width="7" height="7"/>
+      <rect class="node" x="171" y="56" width="8" height="8"/>
+
+      <rect class="node2" x="172" y="84" width="11" height="11"/>
+      <rect class="node2" x="223" y="43" width="10" height="10"/>
+      <rect class="node2" x="122" y="64" width="12" height="12"/>
+      <rect class="node2" x="33" y="33" width="9" height="9"/>
+      <rect class="node2" x="213" y="127" width="11" height="11"/>
+      <rect class="node2" x="60" y="118" width="10" height="10"/>
+      <rect class="node2" x="28" y="173" width="10" height="10"/>
+    </g>
+
+    <g>
+      <circle class="tiny" cx="58" cy="28" r="2.3"/>
+      <circle class="tiny" cx="97" cy="64" r="2.3"/>
+      <circle class="tiny" cx="149" cy="91" r="2.3"/>
+      <circle class="tiny" cx="71" cy="121" r="2.3"/>
+      <circle class="tiny" cx="91" cy="148" r="2.3"/>
+      <circle class="tiny" cx="180" cy="182" r="2.3"/>
+      <circle class="tiny" cx="217" cy="154" r="2.3"/>
+      <circle class="tiny" cx="103" cy="33" r="2.3"/>
+      <circle class="tiny" cx="192" cy="191" r="2.3"/>
+    </g>
+  </g>
+</svg>
